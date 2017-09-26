@@ -1,0 +1,25 @@
+{
+  "name": "ncdo_clientgen",
+  "version": "0.0.1",
+  "description": "Client generator for NCDO",
+  "main": "./lib/clientgen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://robin@94.111.118.217:50022/opt/git/NCDO_ClientGen.git"
+  },
+  "keywords": [
+    "client",
+    "generator",
+    "CDO",
+    "NCDO",
+    ".net"
+  ],
+  "author": "Robin Herbots",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  }
+}
