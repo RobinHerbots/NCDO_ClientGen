@@ -16,6 +16,5 @@ module.exports = function (grunt) {
 
 // Load the plugin that provides the tasks.
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('release', ["release"]);
     grunt.registerTask('default', ["availabletasks"]);
 };
