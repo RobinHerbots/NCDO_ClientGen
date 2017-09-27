@@ -7,8 +7,7 @@ module.exports = function (grunt) {
             tasks: {
                 options: {
                     filter: 'exclude',
-                    tasks: ['availabletasks', 'default'],
-                    showTasks: ['user']
+                    tasks: ['availabletasks', 'default']
                 }
             }
         }
