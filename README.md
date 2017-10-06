@@ -3,6 +3,8 @@ Generate a .NET client from a CloudDataObject Catalog (see <a href="https://gith
 
 The generated client makes use of <a href="https://github.com/RobinHerbots/NCDO">NCDO</a>.
 
+## Prerequisites 
+Install the <a href="https://www.microsoft.com/net/download/core">.NET Core 2.x SDK</a>. 
 
 ## Install
 
