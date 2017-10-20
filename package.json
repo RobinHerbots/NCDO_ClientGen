@@ -5,9 +5,9 @@
   "main": "./lib/clientgen.js",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-available-tasks": "^0.6.0",
+    "grunt-available-tasks": "^0.6.3",
     "grunt-cli": "^1.2.0",
-    "load-grunt-tasks": "^3.2.0",
+    "load-grunt-tasks": "^3.5.2",
     "grunt-release": "^0.14.0"
   },
   "scripts": {
@@ -31,6 +31,6 @@
   "author": "Robin Herbots",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.0"
+    "bluebird": "^3.5.1"
   }
 }
