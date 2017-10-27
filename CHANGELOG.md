@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.13 - 2017-10-27]
+### update
+- generate better typed CDO (update for findbyid)
+
 ## [0.0.12 - 2017-10-25]
 ### added
 - allow void return for invoke operations
