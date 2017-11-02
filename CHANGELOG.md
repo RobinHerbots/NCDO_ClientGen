@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.16 - 2017-11-02]
+### update
+- improve table gen
+
 ## [0.0.15 - 2017-11-02]
 ### update
 - adjust importtables generation
