@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.17 - 2017-11-06]
+### update
+- add support for date, datetime, datetime-tz
+
 ## [0.0.16 - 2017-11-02]
 ### update
 - improve table gen
