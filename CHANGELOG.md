@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.19 - 2017-11-07]
+### added
+- support for datadefinitions schema
+### update
+- extend record with INotifyPropertyChanged & table with INotifyCollectionChanged
+
+## [0.0.18 - 2017-11-06]
+### update
+- allow cdo with no schema definition (invokes only)
+
 ## [0.0.17 - 2017-11-06]
 ### update
 - add support for date, datetime, datetime-tz
