@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.20 - 2017-11-07]
+### update
+- remove notify in generated client as this is already handled in the NCDO base
+
 ## [0.0.19 - 2017-11-07]
 ### added
 - support for datadefinitions schema
