@@ -1,6 +1,6 @@
 {
   "name": "ncdo_clientgen",
-  "version": "0.0.22",
+  "version": "1.0.23",
   "description": "Client generator for NCDO",
   "main": "./lib/clientgen.js",
   "devDependencies": {
@@ -8,8 +8,7 @@
     "grunt-available-tasks": "^0.6.3",
     "grunt-cli": "^1.2.0",
     "grunt-release": "^0.14.0",
-    "load-grunt-tasks": "^3.5.2",
-    "rimraf": "^2.6.2"
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "start": "grunt",
@@ -32,6 +31,7 @@
   "author": "Robin Herbots",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "rimraf": "^2.6.2"
   }
 }
