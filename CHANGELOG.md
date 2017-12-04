@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.22 - 2017-12-04]
+### update
+- check if generated type already exists 
+
 ## [0.0.21 - 2017-11-30]
 ### update
 - handle errors in invoke operations
