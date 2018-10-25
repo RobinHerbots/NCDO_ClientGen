@@ -18,5 +18,7 @@ if (process.argv[2] !== undefined) {
     });
 } else {
     console.log("usage: ncdo_clientgen <catalogUrl> [<outputPath>] [<noclean> <framework>]");
+    console.log("       noclean => do not clear the current generated project");
+    console.log("       framework => specify target framework (ex. netstandard20, net472, net461)");
 }
 
