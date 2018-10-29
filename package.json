@@ -1,6 +1,6 @@
 {
   "name": "ncdo_clientgen",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "Client generator for NCDO",
   "main": "./lib/clientgen.js",
   "devDependencies": {
@@ -33,6 +33,5 @@
   "dependencies": {
     "bluebird": "^3.5.2",
     "rimraf": "^2.6.2"
-
   }
 }
