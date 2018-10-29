@@ -31,8 +31,8 @@
   "author": "Robin Herbots",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "npm": "^6.4.1",
+    "bluebird": "^3.5.2",
     "rimraf": "^2.6.2"
+
   }
 }
