@@ -1,6 +1,6 @@
 {
   "name": "ncdo_clientgen",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "Client generator for NCDO",
   "main": "./lib/clientgen.js",
   "files": [
