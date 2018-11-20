@@ -14,7 +14,8 @@
     "grunt-available-tasks": "^0.6.3",
     "grunt-cli": "^1.2.0",
     "grunt-release": "^0.14.0",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "xml2js": "^0.4.19"
   },
   "scripts": {
     "start": "grunt",
