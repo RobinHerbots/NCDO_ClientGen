@@ -13,7 +13,18 @@ The generated client makes use of <a href="https://github.com/RobinHerbots/NCDO"
 
 ## Install
 
+    $ npm install ncdo_clientgen -g
+
+or
+
     $ npm install ncdo_clientgen --save-dev
+    and in package.json
+       ...
+       "scripts": {
+        "genclient": "ncdo_clientgen http://<hostname>/static/CDOService.json --output ./"
+        ...
+        
+    $ npm run genclient
 
 ## Usage
 
