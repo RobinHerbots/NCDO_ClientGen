@@ -17,11 +17,18 @@ The generated client makes use of <a href="https://github.com/RobinHerbots/NCDO"
 
 ## Usage
 
-ncdo_clientgen catalogurl [path]
+```
+ncdo_clientgen <catalogUrl> [options]
+options:
+       --output : outputpath for the client
+       --noclean : do not clear the current generated project
+       --framework : specify target framework (ex. netstandard20, net472, net461)
+       --bearer : token to pass in the Authorization header to access the catalog (if secured)
 
+```
 
 Example:
 ```
-ncdo_clientgen http://<hostname>/static/CDOService.json ./
+ncdo_clientgen http://<hostname>/static/CDOService.json --output ./
 ```
 
