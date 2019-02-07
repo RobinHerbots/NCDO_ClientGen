@@ -33,6 +33,12 @@ if (process.argv[2] !== undefined) {
 
     outputpath = path.relative(process.cwd(), outputpath);
 
+    console.log(`catalogUrl: ${catalogUrl}`);
+    console.log(`output: ${outputpath}`);
+    console.log(`noclean: ${noclean}`);
+    console.log(`framework: ${framework}`);
+    console.log(`bearer: ${bearerToken}`);
+
     cg(catalogUrl, outputpath, noclean, framework, bearerToken).then(function (data) {
         console.log(data);
     }).error(function (data) {
