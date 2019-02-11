@@ -5,15 +5,15 @@ var cg = require('../lib/clientgen'),
 
 if (process.argv[2] !== undefined) {
     var catalogUrl = process.argv[2],
-        outputpath = process.cwd(),
+        output = process.cwd(),
         noclean = false,
         framework,
-        bearerToken;
+        bearer;
 
     for (var i = 3; i < process.argv.length; i++) {
         switch (process.argv[i]) {
             case "--output":
-                outputpath = process.argv[i + 1];
+                output = process.argv[i + 1];
                 i++;
                 break;
             case "--noclean":
@@ -25,21 +25,21 @@ if (process.argv[2] !== undefined) {
                 i++;
                 break;
             case "--bearer":
-                bearerToken = process.argv[i + 1];
+                bearer = process.argv[i + 1];
                 i++;
                 break;
         }
     }
 
-    outputpath = path.relative(process.cwd(), outputpath);
+    output = path.relative(process.cwd(), output);
 
     console.log(`catalogUrl: ${catalogUrl}`);
-    console.log(`output: ${outputpath}`);
+    console.log(`output: ${output}`);
     console.log(`noclean: ${noclean}`);
     console.log(`framework: ${framework}`);
-    console.log(`bearer: ${bearerToken}`);
+    console.log(`bearer: ${bearer}`);
 
-    cg(catalogUrl, outputpath, noclean, framework, bearerToken).then(function (data) {
+    cg(catalogUrl, output, noclean, framework, bearer).then(function (data) {
         console.log(data);
     }).error(function (data) {
         console.log(data);
@@ -47,7 +47,7 @@ if (process.argv[2] !== undefined) {
 } else {
     console.log("ncdo_clientgen <catalogUrl> [options]");
     console.log("options:");
-    console.log("       --output : outputpath for the client");
+    console.log("       --output : output path for the client");
     console.log("       --noclean : do not clear the current generated project");
     console.log("       --framework : specify target framework (ex. netstandard20, net472, net461)");
     console.log("       --bearer : token to pass in the Authorization header to access the catalog (if secured)");

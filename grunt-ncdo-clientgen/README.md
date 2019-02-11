@@ -27,7 +27,7 @@ In your project's Gruntfile, add a section named `ncdo_clientgen` to the data ob
             default: {
                 options: {
                     catalogUrl: "http://<hostname>/static/CDOService.json",
-                    outputpath: "../.."
+                    output: "../.."
                 }
             }
         }
@@ -39,9 +39,9 @@ In your project's Gruntfile, add a section named `ncdo_clientgen` to the data ob
 
 Uri or file of the catalog.json
 
-#### options.outputpath
+#### options.output
 
-outputpath for the client
+output path for the client
 
 #### options.noclean
 
