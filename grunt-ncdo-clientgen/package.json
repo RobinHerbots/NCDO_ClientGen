@@ -1,1 +1,40 @@
-{"name":"grunt-ncdo-clientgen","description":"ncdo_clientgen task","version":"1.0.63","homepage":"https://github.com/RobinHerbots/NCDO_ClientGen","author":{"name":"Robin Herbots","email":"robin.herbots@gmail.com"},"repository":{"type":"git","url":"https://github.com/RobinHerbots/NCDO_ClientGen.git","directory":"grunt-ncdo-clientgen"},"bugs":{"url":"https://github.com/RobinHerbots/NCDO_ClientGen/issues"},"license":"MIT","engines":{"node":">= 0.8.0"},"devDependencies":{"grunt":"^1.0.3","grunt-available-tasks":"^0.6.3","grunt-cli":"^1.2.0","grunt-release":"^0.14.0","load-grunt-tasks":"^3.5.2"},"keywords":["ncdo","ncdo_clientgen","gruntplugin"],"files":["tasks"],"dependencies":{"ncdo_clientgen":"1.0.63"}}
+{
+  "name": "grunt-ncdo-clientgen",
+  "description": "ncdo_clientgen task",
+  "version": "1.0.63",
+  "homepage": "https://github.com/RobinHerbots/NCDO_ClientGen",
+  "author": {
+    "name": "Robin Herbots",
+    "email": "robin.herbots@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinHerbots/NCDO_ClientGen.git",
+    "directory": "grunt-ncdo-clientgen"
+  },
+  "bugs": {
+    "url": "https://github.com/RobinHerbots/NCDO_ClientGen/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-available-tasks": "^0.6.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-release": "^0.14.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "keywords": [
+    "ncdo",
+    "ncdo_clientgen",
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks"
+  ],
+  "dependencies": {
+    "ncdo_clientgen": "1.0.63"
+  }
+}

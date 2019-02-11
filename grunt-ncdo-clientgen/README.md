@@ -51,6 +51,13 @@ do not clear the current generated project
 
 specify target framework (ex. netstandard20, net472, net461
 
-#### options.bearerToken
+#### options.bearer
 
 bearer : token to pass in the Authorization header to access the catalog (if secured)
+
+### Command line
+Every option can also be passed at the command line.
+
+```
+grunt ncdo_clientgen --framwork=net461 --bearer=123456
+```

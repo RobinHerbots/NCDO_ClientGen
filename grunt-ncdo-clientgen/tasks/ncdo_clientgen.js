@@ -14,11 +14,11 @@ var cg = require("ncdo_clientgen"),
 module.exports = function (grunt) {
     grunt.registerMultiTask('ncdo_clientgen', 'ncdo_clientgen task', function () {
         var opts = this.options({}), done = this.async();
-        opts.catalogUrl = opts.catalogUrl || undefined;
-        opts.outputpath = opts.outputpath || process.cwd()
-        opts.noclean = opts.noclean || false;
-        opts.framework = opts.framework || undefined;
-        opts.bearerToken = opts.bearerToken || undefined;
+        opts.catalogUrl = grunt.option('catalogUrl') || opts.catalogUrl || undefined;
+        opts.outputpath = grunt.option('outputpath') || opts.outputpath || process.cwd()
+        opts.noclean = grunt.option('noclean') || opts.noclean || false;
+        opts.framework = grunt.option('framework') || opts.framework || undefined;
+        opts.bearer = grunt.option('bearer') || opts.bearer || undefined;
 
         opts.outputpath = path.relative(process.cwd(), opts.outputpath);
 
@@ -31,10 +31,10 @@ module.exports = function (grunt) {
             grunt.log.writeln("       framework : specify target framework (ex. netstandard20, net472, net461)");
             grunt.log.writeln("       bearer : token to pass in the Authorization header to access the catalog (if secured)");
             done();
-        }
-        else {
+        } else {
             grunt.log.writeln("Generating client for " + opts.catalogUrl);
-            cg(opts.catalogUrl, opts.outputpath, opts.noclean, opts.framework, opts.bearerToken).then(function (data) {
+            grunt.log.writeln(JSON.stringify(opts));
+            cg(opts.catalogUrl, opts.outputpath, opts.noclean, opts.framework, opts.bearer).then(function (data) {
                 grunt.log.writeln(data);
                 done();
             }).error(function (data) {
