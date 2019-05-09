@@ -1,7 +1,7 @@
 {
   "name": "grunt-ncdo-clientgen",
   "description": "ncdo_clientgen task",
-  "version": "1.0.71",
+  "version": "1.0.72",
   "homepage": "https://github.com/RobinHerbots/NCDO_ClientGen",
   "author": {
     "name": "Robin Herbots",
