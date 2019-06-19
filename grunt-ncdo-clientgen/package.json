@@ -35,6 +35,6 @@
     "tasks"
   ],
   "dependencies": {
-    "ncdo_clientgen": "1.0.80"
+    "ncdo_clientgen": "1.0.81"
   }
 }
